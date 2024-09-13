@@ -10,7 +10,7 @@ Especificação Preço unitário
 Escrever um algoritmo que leia o código do lanche pedido, a quantidade e calcule o valor a ser pago por aquele lanche. 
 */
 
-var cardapio = parseInt(prompt("*** FAÇA SEU PEDIDO PELO CÓDIGO DO PRODUTO ***\nCARDÁPIO\nEspecificação Preço unitário:\n100 Cachorro quente 1,10\n101 Bauru simples 1,30\n102 Bauru c/ovo 1,50\n103 Hamburger 1,10\n104 Cheeseburger 1,30\nDIGITE O CÓDIGO DO PEDIDO: "));
+/*var cardapio = parseInt(prompt("*** FAÇA SEU PEDIDO PELO CÓDIGO DO PRODUTO ***\nCARDÁPIO\nEspecificação Preço unitário:\n100 Cachorro quente 1,10\n101 Bauru simples 1,30\n102 Bauru c/ovo 1,50\n103 Hamburger 1,10\n104 Cheeseburger 1,30\nDIGITE O CÓDIGO DO PEDIDO: "));
 var qtde = parseInt(prompt("Digite a quantidade: "));
 var codigo100 = 1.10 * qtde;
 var codigo101 = 1.30 * qtde;
@@ -30,5 +30,16 @@ console.log("O valor de sua compra é de R$ " + codigo100);
     console.log("O valor de sua compra é de R$ " + codigo104);
 } else {
         console.log("Digite um código VÁLIDO!!!");
-}
-    
+}*/
+
+var descricaoCardapio = "===== ESCOLHA UM LANCHE =====\n";
+descricaoCardapio += "100 | Cachorro quente  |  1,10\n";
+descricaoCardapio += "101 | Bauru simples    |  1,30\n";
+descricaoCardapio += "102 | Bauru c/ovo      |  1,50\n";
+descricaoCardapio += "103 | Hamburger        |  1,10\n";
+descricaoCardapio += "104 | Cheeseburger     |  1,30\n";  
+descricaoCardapio += "\nDigite o CÓDIGO do lanche escolhido:";
+
+var codigoLanche = parseInt(prompt("Quantos lanches deseja pedir?"));
+
+var valorTotal = 0;
